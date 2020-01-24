@@ -1,5 +1,4 @@
 <p class="mt4">
-  {{ site.signoff }}
-  <span class="silver">{{ page.date | date: "at %H:%M" }}</span>
+  <em>{{ site.signoff }}</em>
+  <span class="silver">{{ page.date | date: "at %F %s" }}</span>
 </p>
-<img src="{{ site.url }}/images/scribble3.png" alt="scribble" />
