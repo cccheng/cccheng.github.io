@@ -196,6 +196,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-feed
 
 BUNDLED WITH
    2.1.2
