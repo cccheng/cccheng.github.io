@@ -3,13 +3,22 @@ title: Placeholder Post
 date: 1970-01-01 00:00:00
 ---
 
-Scribble is a [Jekyll](http://jekyllrb.com/) theme, created by [Mu-An](http://muan.co/).
+I am a placeholder post. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+
+> Simplicity is prerequisite for reliability.
+>
+> – Edsger Dijkstra
 
 ---
 
 <a href="https://github.com/muan/scribble" class="pa3 tc ba br2 db">Get it on GitHub &hearts;</a>
 
 ---
+
+* [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+* [Example.com][1]
+* Footnote [^1]
 
 ## Header 2
 
@@ -23,21 +32,27 @@ Normal text
 
 _italic_
 
+~~strikethrough~~
+
 1. order list
+    ```
+    not highlighted
+    multi line
+    ```
 2. order list
 3. order list
 
-- unorder list
-- unorder list
-- unorder list
-
-> Boom. I am a blockquote.
->
-> Say something really clever here.
+term
+: definition
 
 ```ruby
-def whaaa
-  puts "I have a friend called Bobobmob."
+def hello 
+  puts "world"
 end
 ```
 
+
+---
+
+[1]: http://example.com
+[^1]: This is the footnote.
