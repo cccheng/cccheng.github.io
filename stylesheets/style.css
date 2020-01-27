@@ -1,6 +1,6 @@
 @import "https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css";
 
-.bg-super-white { background: #f9f9f9; }
+.bg-super-white { background: #f0f0f0; }
 .top-50 { top: 50% }
 .link:hover { background: url(/images/line.png) repeat-x left bottom; }
 
@@ -27,8 +27,8 @@
   border-bottom: 1px dotted #CCC;
 }
 .markdown-body blockquote {
-  background: #f9f9f9;
-  border-left: .2rem solid #ccc;
+  background: #eaeaea;
+  border-left: .3rem solid #ccc;
   padding-left: 3.8rem;
 }
 /* end Markdown styles */

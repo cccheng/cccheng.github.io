@@ -10,10 +10,10 @@
   <body class="lh-copy dark-gray pa0 f6 sans-serif bg-super-white">
     <header class="tc mt4">
       <a href="{{ site.url }}">
-        <img src="{{ site.url }}/images/c.png" alt="Home" width="53" height="59">
+        <img src="{{ site.url }}/images/c.png" alt="Home" />
       </a>
     </header>
-    <div class="mw7 bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray">
+    <div class="mw8 bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray">
       <nav class="bb b--light-gray pv4 tc" aria-label="Main">
         {% for link in site.links %}
           <a class="link blue hover-mid-gray mh2 pv1"
@@ -47,7 +47,7 @@
       {% if is_post %}{% include pagination.html %}{% endif %}
     </div>
     <footer class="mw7 center tc pt3 pb4 silver">
-      Built with Jekyll using <a href="http://github.com/muan/scribble" class="link silver hover-blue pv1">Scribble</a>.
+      Built with <a href="https://jekyllrb.com/" class="link silver hover-blue pv1">Jekyll</a> using <a href="http://github.com/muan/scribble" class="link silver hover-blue pv1">Scribble</a>.
     </footer>
   </body>
 </html>
