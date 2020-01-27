@@ -31,4 +31,7 @@
   border-left: .3rem solid #ccc;
   padding-left: 3.8rem;
 }
+.footnotes p {
+  margin: 0;
+}
 /* end Markdown styles */
