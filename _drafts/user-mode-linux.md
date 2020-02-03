@@ -64,6 +64,7 @@ user-mode linux 可以使用額外的參數，詳情可參可 `linux --help`。
 
 ## References
 - Jserv: 透過 User-Mode-Linux 來學習核心設計 [(1)](http://blog.linux.org.tw/~jserv/archives/001871.html) [(2)](http://blog.linux.org.tw/~jserv/archives/001872.html). 2007.
+- Jserv: [建構 User-Mode Linux 的實驗環境](https://hackmd.io/@sysprog/user-mode-linux-env)
 - [Wikipedia: User-mode Linux](https://en.wikipedia.org/wiki/User-mode_Linux)
 - [Gentoo: user-mode linux guide](https://wiki.gentoo.org/wiki/User-mode_Linux/Guide)
 - [Arch Linux: user-mode linux](https://wiki.archlinux.org/index.php/User-mode_Linux)
