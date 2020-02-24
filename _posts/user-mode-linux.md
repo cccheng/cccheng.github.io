@@ -1,6 +1,6 @@
 ---
 title: User Mode Linux Quicknote
-date: 2020-01-01 00:00:00
+date: 2020-02-24 00:00:00
 tags: [linux, kernel]
 ---
 
