@@ -253,7 +253,12 @@ tags: [conference]
 
 ---
 ### [Open Source Summit](https://en.wikipedia.org/wiki/Open_Source_Summit)
-
+[2019 Europe](https://events19.linuxfoundation.org/events/open-source-summit-europe-2019/)
+[2018 Europe](https://events19.linuxfoundation.org/events/open-source-summit-europe-2018/)
+[2018 North America](https://events19.linuxfoundation.org/events/open-source-summit-north-america-2018/)
+[2018 Japan](https://events19.linuxfoundation.org/events/open-source-summit-japan-2018/)
+[2017 Europe](http://events17.linuxfoundation.org/events/open-source-summit-europe)
+[2017 North America](http://events17.linuxfoundation.org/events/open-source-summit-north-america)
 
 ### [LinuxCon Europe](https://events.linuxfoundation.org/events/linuxcon-europe/)
 [2016](https://events.linuxfoundation.org/events/archive/2016/linuxcon-europe),
@@ -304,7 +309,7 @@ tags: [conference]
 [SUSECON'12](https://www.susecon.com/archive-2012.html)
 
 ---
-### 中国Linux内核开发者大会 ([CLK](https://www.ckernel.org/))
+### 中国 Linux 内核开发者大会 ([CLK](https://www.ckernel.org/))
 [CLK'19](https://github.com/ChinaLinuxKernel/CLK2019),
 [CLK'18](https://github.com/ChinaLinuxKernel/CLK2018),
 [CLK'17](https://github.com/ChinaLinuxKernel/CLK/tree/master/CLK2017),
@@ -348,4 +353,14 @@ tags: [conference]
 - [LWN](https://lwn.net/Archives/ConferenceByYear/)
 - [USENIX](https://www.usenix.org/conferences/byname/)
 - [Linux Foundation Events](https://events.linuxfoundation.org/)
+- [Microsoft Research](https://www.microsoft.com/en-us/research/)
+- [IBM Research](https://www.research.ibm.com/)
+- [Google Research](https://research.google/)
+- [ACM Queue](https://queue.acm.org/)
+- [SNIA (Storage Networking Industry Association)](https://www.snia.org/)
+    - [SNIA Standards](https://www.snia.org/tech_activities/standards)
+    - [SNIA Technical Work](https://www.snia.org/tech_activities/work)
+    - [SNIA Tutorials](https://www.snia.org/education/tutorials)
+- [NetAPP Advanced Technology Group](https://atg.netapp.com/)
+- [WISC The ADvanced Systems Laboratory (ADSL)](https://research.cs.wisc.edu/adsl/Publications/)
 
