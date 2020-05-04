@@ -196,7 +196,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll (~> 3.4)
   jekyll-feed
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
