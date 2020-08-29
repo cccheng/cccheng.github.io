@@ -10,7 +10,12 @@
   color: #357edd;
 }
 .markdown-body .highlighter-rouge {
-  padding: .25rem .5rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: "Monaco", "Courier New", "monospace";
+  line-height: 1;
+  padding: 1px 2px;
 }
 .markdown-body pre {
   margin: 0;
