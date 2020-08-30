@@ -14,6 +14,10 @@ I am a placeholder post. Lorem ipsum dolor sit amet, consectetuer adipiscing eli
 >
 > – Donald Knuth
 
+> If you stop coding, you stop leanring.
+>
+> – Kent Beck
+
 ---
 
 <a href="https://github.com/muan/scribble" class="pa3 tc ba br2 db">Get it on GitHub &hearts;</a>
