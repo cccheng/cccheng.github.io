@@ -1,16 +1,8 @@
 ---
 title: Filesystem & Unicode Normalization
-date: 2020-08-01 00:00:00
+date: 2020-10-26 00:00:00
 tags: [linux]
 ---
-
-```console
-# touch $(echo -e "\u00C5")
-# touch $(echo -e "\u212B")
-# touch $(echo -e "\u0041\u030A")
-# ls
-./  ../  Å  Å  Å
-```
 
 ## Unicode Decomposed and Precomposed Characters
 
@@ -31,21 +23,28 @@ tags: [linux]
 ---
 ## Unicode Equivalence and Normalization
 
-由於 `U+212B`, `U+00C5`, `U+0041-U+030A` 都長成 `Å` 的模樣，應用程式處理 unicode 時必須考慮到<ruby>等價性<rt>Equivalence</rt></ruby>，否則在比對時找不到在視覺上無法區分的字形。但是也不代表等價，因此產生了[惡搞](https://github.com/reinderien/mimic)的空間，也額外衍生出安全性的問題。
+由於 `U+212B`, `U+00C5`, `U+0041-U+030A` 都長成 `Å` 的模樣，應用程式處理 unicode 時必須考慮到<ruby>等價性<rt>Equivalence</rt></ruby>，否則在比對時會找不到在視覺上無法區分的字形。但其實也不是看起來一樣就代表等價，因此產生了[惡搞](https://github.com/reinderien/mimic)的空間，也額外衍生出安全性的問題。
 
 * [Unicode Security Considerations](https://www.unicode.org/reports/tr36/)
 * [MSDN: Security Considerations: International Features](https://docs.microsoft.com/zh-tw/windows/win32/intl/security-considerations--international-features)
 
 <ruby>正規化<rt>Normalization</rt></ruby>可將所有等價的序列產生一個「唯一」的序列，因此字串要正規化完才能進行比較。先不考慮相容等價，Unicode 有 NFC 和 NFD 兩種標準正規化的方法：
 
-| ***NFD***<br/> *Normalization Form Canonical Decomposition* | 以標準等價方式來分解<br/> Å ⟶ `U+0041-U+030A`<br/> ᾅ ⟶ `U+03B1 U+0314 U+0301 U+0345` |
-| ***NFC***<br/> *Normalization Form Canonical Composition*   | 以標準等價方式來分解，然後以標準等價重組之。重組結果有可能和分解前不同。<br/> Å ⟶ `U+0041-U+030A` ⟶ `U+00C5`<br/> ᾅ ⟶ `U+03B1 U+0314 U+0301 U+0345` ⟶ `U+1F85` |
+### **NFD** Normalization Form Canonical Decomposition
+以標準等價方式來分解
+* Å ⟶ `U+0041-U+030A`
+* ᾅ ⟶ `U+03B1 U+0314 U+0301 U+0345`
+
+### **NFC** Normalization Form Canonical Composition
+以標準等價方式來分解，然後以標準等價重組之。重組結果有可能和分解前不同。
+* Å ⟶ `U+0041-U+030A` ⟶ `U+00C5`
+* ᾅ ⟶ `U+03B1 U+0314 U+0301 U+0345` ⟶ `U+1F85`
 
 
 ---
 ## Filesystem Implemetations
 
-先講結論，大部分的檔案系統都**不會對檔案名稱做 unicode 正規化 (NFC/NFD)**。因此**不要假設檔案名稱是 NFC 或 NFD 形式**，可能還**沒有正規化**，或者同一個檔名有**兩者混合**的形式，甚至根本**不是合法的 unicode 編碼**，就只是一坨 raw bytes 從硬碟上被讀起來。
+先講結論，大部分的檔案系統都**不會對檔案名稱做 unicode 正規化 (NFC/NFD)**。因此**不要假設檔案名稱是 NFC 或 NFD 形式**，檔案名稱可能還**沒有正規化**，或者同一個檔名有**兩者混合**的形式，甚至根本**不是合法的 unicode 編碼**，就只是一坨 raw bytes 從硬碟上被讀起來。
 
 所以系統內任何對檔案名稱的操作，主要是 create 與 lookup，如果沒有統一的正規化來規範等價性，有機會[找不到存在的檔案](https://en.wikipedia.org/wiki/Unicode_equivalence#Errors_due_to_normalization_differences)而無法正常操作。
 

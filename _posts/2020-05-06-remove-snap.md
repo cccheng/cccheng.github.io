@@ -26,6 +26,7 @@ Xubuntu 20.04 已經採用 Linux-5.4，因此不是版本問題。問題在於 X
 # rm /swapfile
 # touch /swapfile
 # chattr +C /swapfile
+# chmod 600 /swapfile
 # fallocate -l 1599283200 /swapfile
 # mkswap /swapfile
 # swapon /swapfile
@@ -73,3 +74,4 @@ $ sudo apt purge snapd squashfs-tools
 [^2]: [Swap file support](https://btrfs.wiki.kernel.org/index.php/Project_ideas#Swap_file_support)
 [^3]: [Btrfs: implement swap file support](https://lwn.net/Articles/763949/)
 
+[Linux Mint drops Ubuntu Snap packages](https://lwn.net/Articles/825005/)
